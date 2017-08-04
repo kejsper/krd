@@ -21,16 +21,6 @@ $(document).ready( () => {
   function dataToHtml(data) {
     $('.content__data').html('');
     $.each(data, function(key, value) {
-      /*
-      var htmledData = `<div class="content__item"><div id="heading${value.Id}" class="row" role="tab"><div class="col-5">${value.Name}</div>`;
-      htmledData += `<div class="col-3">${value.NIP}</div>`;
-      htmledData += `<div class="col-2">${value.Value}</div>`;
-      htmledData += `<div class="col-2"><a data-toggle="collapse" data-parent="#accordion" href="#collapse${value.Id}" aria-expanded="true" aria-controls="collapse${value.Id}">więcej</a></div></div>`;
-      htmledData += `<div id="collapse${value.Id}" class="row collapse" role="tabpanel" aria-labelledby="heading${value.Id}"><div class="col-5">${value.Address}</div>`;
-      htmledData += `<div class="col-3">${value.DocumentType}</div>`;
-      htmledData += `<div class="col-2">${value.Price}</div>`;
-      htmledData += `<div class="col-2">${value.Number}</div></div></div>`;
-      */
       var htmledData = `
       <div class="content__row">
         <div class="row" role="tab" id="heading${value.Id}">
@@ -62,12 +52,9 @@ $(document).ready( () => {
     link = $(this).data('link');
 
     if (! $(link).hasClass('content__hidden--not')) {
-      console.log('nie ma');
-      console.log(link);
       $('#accordion').find('.content__hidden--not').removeClass('content__hidden--not');
       $(link).addClass('content__hidden--not');
     } else {
-      console.log('ma');
       $('#accordion').find('.content__hidden--not').removeClass('content__hidden--not');
     }
   });

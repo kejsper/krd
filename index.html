@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Zadanie Rekrutacyjne</title>
+  <link rel="stylesheet" href="build/css/styles.css">
+</head>
+<body>
+  <!-- header of the page -->
+  <header class="header">
+    <div class="container">
+      <div class="row">
+        <div class="col-12 col-md-6 header__search">
+          <form action="">
+            <label for="">podaj numer sprawy, nazwę lub nip dłużnika</label>
+            <input type="text">
+            <button type="submit" class="btn header__btn">szukaj</button>
+          </form>
+        </div>
+        <div class="col-12 col-md-6 header__cases">
+          <p class="header__paragraph">całkowita ilość spraw</p>
+          <h3 class="header__sum"></h3>
+        </div>
+      </div>
+    </div><!-- .container -->
+  </header><!-- .header -->
+
+  <!-- content section of the page -->
+  <section class="content">
+    <div class="container">
+      <div class="row content__header">
+        <div class="col-5 content__header item">Dłużnik</div>
+        <div class="col-3 content__header item">nip</div>
+        <div class="col-2 content__header item">kwota zadłużenia</div>
+        <div class="col-2 content__header item"></div>
+      </div>
+
+      <div id="accordion" class="content__data">
+
+      </div>
+
+
+    </div><!-- .container -->
+  </section><!-- .content -->
+  <script src="build/js/jquery.min.js"></script>
+  <script src="build/js/tether.min.js"></script>
+  <script src="build/js/bootstrap.min.js"></script>
+  <script src="build/js/script.js"></script>
+</body>
+</html>

@@ -1,0 +1,11 @@
+/* bootstrap */
+@import '../../node_modules/bootstrap/scss/bootstrap';
+
+/* sass files */
+@import 'variables';
+@import 'mixins';
+
+/* components */
+@import 'layout';
+@import 'header';
+@import 'content';

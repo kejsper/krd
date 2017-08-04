@@ -1,0 +1,36 @@
+{
+  "name": "krd",
+  "version": "1.0.0",
+  "description": "Zadanie Rekrutacyjne",
+  "main": "index.html",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/kejsper/krd.git"
+  },
+  "keywords": [
+    "krd",
+    "rekrutacja",
+    "json",
+    "jquery",
+    "bem",
+    "sass"
+  ],
+  "author": "Kacper Tylenda",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/kejsper/krd/issues"
+  },
+  "homepage": "https://github.com/kejsper/krd#readme",
+  "devDependencies": {
+    "gulp": "^3.9.1",
+    "gulp-ruby-sass": "^2.1.1"
+  },
+  "dependencies": {
+    "bootstrap": "^4.0.0-alpha.6",
+    "jquery": "^3.2.1",
+    "tether": "^1.4.0"
+  }
+}

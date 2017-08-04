@@ -1,0 +1,36 @@
+.header {
+  &__search {
+    label {
+      display: block;
+      color: $white;
+      font-size: 0.8em;
+      font-weight: bold;
+      text-transform: uppercase;
+    }
+  }
+
+  &__btn {
+    background-color: $red;
+    color: $white;
+    font-size: 0.8em;
+    text-transform: uppercase;
+    border-radius: 0;
+
+  }
+
+  &__paragraph {
+    color: $red;
+    font-size: 1em;
+    font-weight: bold;
+    text-transform: uppercase;
+    text-align: right;
+    margin-bottom: 0;
+  }
+
+  &__sum {
+    color: $white;
+    font-size: 2.25em;
+    font-weight: bold;
+    text-align: right;
+  }
+}

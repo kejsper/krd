@@ -1,6 +1,10 @@
 .content {
+  &__container {
+    padding: 0 0;
+  }
 
   &__header {
+    margin: 0 0;
     color: $grey;
     font-size: 0.9em;
     font-weight: 400;
@@ -12,14 +16,53 @@
     }
   }
 
-  &__item {
-    padding: 15px 0;
-    color: $dark;
+  &__data {
+    padding: 0 0;
   }
 
   &__row {
-    padding: 20px 0;
+    padding: 20px 15px;
+    background-color: $white;
     border-bottom: 1px solid $grey;
+    &--shadow{
+      background-color: $shadow;
+    }
+  }
+
+  &__value {
+    font-size: 1.15em;
+    color: $dark;
+    font-weight: 500;
+    &--more {
+      font-size: 1.05em;
+      font-weight: 400;
+    }
+  }
+
+  &__p{
+    font-size: 0.7em;
+    color: $dark;
+    text-transform: uppercase;
+    font-weight: 400;
+    margin-bottom: 0;
+    display: none;
+
+    &--show {
+      display: block;
+    }
+  }
+
+  &__link {
+    color: $red;
+    display: block;
+    font-size: 0.9em;
+    text-align: right;
+    text-transform: uppercase;
+    &:hover, &:focus, &:link {
+      text-decoration: none;
+      color: $red;
+    }
+
   }
 
   &__hidden {

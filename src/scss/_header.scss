@@ -1,12 +1,17 @@
 .header {
-  &__search {
-    label {
-      display: block;
-      color: $white;
-      font-size: 0.8em;
-      font-weight: bold;
-      text-transform: uppercase;
-    }
+  &__form {
+    display: block;
+    color: $white;
+    font-size: 0.8em;
+    font-weight: bold;
+    text-transform: uppercase;
+  }
+
+  &__input {
+    border-radius: 0;
+    border: 0;
+    width: 300px !important;
+    height: 40px;
   }
 
   &__btn {
@@ -15,7 +20,8 @@
     font-size: 0.8em;
     text-transform: uppercase;
     border-radius: 0;
-
+    padding: 10px 40px;
+    height: 40px;
   }
 
   &__paragraph {
